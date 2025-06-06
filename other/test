@@ -2954,8 +2954,6 @@ function Library:CreateWindow(...)
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
-		Image = "http://www.roblox.com/asset/?id=10013023996";
-		ImageColor3 = Color3.fromRGB(65, 65, 65);
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
         ZIndex = 1;
