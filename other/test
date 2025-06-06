@@ -3087,7 +3087,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, 0, 1, 0);
             Visible = false;
             ZIndex = 2;
-			Image = "rbxassetid://86629707529463";
+			Image = "rbxassetid://126681780128994";
 			ImageColor3 = Color3.fromRGB(65, 65, 65);
             Parent = TabContainer;
         });
