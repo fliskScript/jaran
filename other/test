@@ -3087,7 +3087,7 @@ function Library:CreateWindow(...)
             Size = UDim2.new(1, 0, 1, 0);
             Visible = false;
             ZIndex = 2;
-			Image = "http://www.roblox.com/asset/?id=10013023996";
+			Image = "rbxassetid://86629707529463";
 			ImageColor3 = Color3.fromRGB(65, 65, 65);
             Parent = TabContainer;
         });
@@ -3096,7 +3096,7 @@ function Library:CreateWindow(...)
             BackgroundTransparency = 1;
             BorderSizePixel = 0;
             Position = UDim2.new(0, 8 - 1, 0, 8 - 1);
-            Size = UDim2.new(0.5, -12 + 2, 0, 407 + 2);
+            Size = UDim2.new(0.5, -12 + 2, 0, 410 + 2);
             CanvasSize = UDim2.new(0, 0, 0, 0);
             AutomaticCanvasSize = "Y";
 			BottomImage = '';
@@ -3110,7 +3110,7 @@ function Library:CreateWindow(...)
             BackgroundTransparency = 1;
             BorderSizePixel = 0;
             Position = UDim2.new(0.5, 4 + 1, 0, 8 - 1);
-            Size = UDim2.new(0.5, -12 + 2, 0, 407 + 2);
+            Size = UDim2.new(0.5, -12 + 2, 0, 410 + 2);
             CanvasSize = UDim2.new(0, 0, 0, 0);
             AutomaticCanvasSize = "Y";
 			BottomImage = '';
