@@ -3110,7 +3110,7 @@ function Library:CreateWindow(...)
             Visible = false;
             ZIndex = 2;
             Parent = TabContainer;
-            Image = game:HttpGet("https://raw.githubusercontent.com/fliskScript/jaran/refs/heads/main/other/morgen.jpg");
+            Image = "http://www.roblox.com/asset/?id=10013023996";
             ImageColor3 = Color3.fromRGB(65, 65, 65);
         });
 
