@@ -3102,7 +3102,7 @@ function Library:CreateWindow(...)
             BackgroundColor3 = 'MainColor';
         });
 
-        local TabFrame = Library:Create('ImageLabel', {
+        local TabFrame = Library:Create('Frame', {
             Name = 'TabFrame',
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 0, 0, 0);
@@ -3110,8 +3110,6 @@ function Library:CreateWindow(...)
             Visible = false;
             ZIndex = 2;
             Parent = TabContainer;
-            Image = "http://www.roblox.com/asset/?id=10013023996";
-            ImageColor3 = Color3.fromRGB(65, 65, 65);
         });
 
         local LeftSide = Library:Create('ScrollingFrame', {
