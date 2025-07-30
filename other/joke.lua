@@ -3336,7 +3336,7 @@ function library:colorpicker(properties)
 				cfg.set(
 					hsv(
 						selected == "rainbow" and library.sin or h,
-						selected == "rainbow" and s,
+						selected == "rainbow" and s or s,
 						selected == "fade" and library.sin or v
 					),
 					selected == "fade_alpha" and library.sin
