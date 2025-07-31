@@ -674,7 +674,7 @@ function library:window(properties)
 
 	library:apply_theme(accent_line, "accent", "BackgroundColor3")
 
-	local name = library:create("TextLabel", {
+	local wname = library:create("TextLabel", {
 		Parent = inline1,
 		Name = "",
 		FontFace = library.font,
@@ -690,6 +690,10 @@ function library:window(properties)
 		TextSize = 13,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
+	
+	function cfg.newtext(string)
+		wname.Text = string
+	end
 
 	local glow = library:create("ImageLabel", {
 		Parent = inline1,
