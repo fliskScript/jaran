@@ -282,53 +282,6 @@ function library:connection(signal, callback)
 	return connection
 end
 
-function library:make_resizable(frame)
-	local Frame = Instance.new("TextButton")
-	Frame.Position = dim2(1, -10, 1, -10)
-	Frame.BorderColor3 = rgb(0, 0, 0)
-	Frame.Size = dim2(0, 10, 0, 10)
-	Frame.BorderSizePixel = 0
-	Frame.BackgroundColor3 = rgb(255, 255, 255)
-	Frame.Parent = frame
-	Frame.BackgroundTransparency = 1
-	Frame.Text = ""
-
-	local resizing = false
-	local start_size
-	local start
-	local og_size = frame.Size
-
-	Frame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			resizing = true
-			start = input.Position
-			start_size = frame.Size
-		end
-	end)
-
-	Frame.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			resizing = false
-		end
-	end)
-
-	library:connection(UserInputService.InputChanged, function(input, game_event)
-		if resizing and input.UserInputType == Enum.UserInputType.MouseMovement then
-			local mouse_pos = vec2(Mouse.X, Mouse.Y)
-			local viewport_x = camera.ViewportSize.X
-			local viewport_y = camera.ViewportSize.Y
-
-			current_size = dim2(
-				start_size.X.Scale,
-				math.clamp(start_size.X.Offset + (input.Position.X - start.X), og_size.X.Offset, viewport_x),
-				start_size.Y.Scale,
-				math.clamp(start_size.Y.Offset + (input.Position.Y - start.Y), og_size.Y.Offset, viewport_y)
-			)
-			frame.Size = current_size
-		end
-	end)
-end
-
 function library:new_item(class, properties)
 	local ins = Instance.new(class)
 
@@ -645,7 +598,6 @@ function library:window(properties)
 	})
 	table.insert(library.main_frame, inline1)
 	local WINDOW_PATH = inline1
-	library:make_resizable(inline1)
 
 	local inline2 = library:create("Frame", {
 		Parent = inline1,
