@@ -86,6 +86,7 @@ getgenv().library = {
 	folders = {
 		"/fonts",
 		"/configs",
+		"/luas"
 	},
 	font,
 }
