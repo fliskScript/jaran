@@ -82,7 +82,7 @@ getgenv().library = {
 	panel_open = false,
   closeui = false,
 
-	directory = "inactivity",
+	directory = "jaran",
 	folders = {
 		"/fonts",
 		"/configs",
